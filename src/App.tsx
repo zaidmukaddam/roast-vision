@@ -93,7 +93,7 @@ function App() {
 
   return (
     <main className="relative flex min-h-screen flex-col items-center mx-auto sm:px-24 text-slate-200"
-      style={{ backgroundImage: "url('/background.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+      style={{ backgroundImage: "url('https://roastyour.email/background.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
       <div className="flex min-h-screen flex-col items-center mx-auto p-4 sm:p-24 text-slate-200">
         <h1 className="text-4xl sm:text-6xl mb-4 font-bold text-slate-100 z-10">🔥 Roast your email 🔥</h1>
         <p className="opacity-40 text-lg">Built with GPT-4 Vision</p>
