@@ -32,7 +32,7 @@ function App() {
     }
   };
 
-  const parsedRoast = roast.split("<br>").reduce((acc: RoastResponse, curr) => {
+  const parsedRoast = roast.split("\n").reduce((acc: RoastResponse, curr) => {
     const [key, value] = curr.split(":").map((el) => el.trim());
     if (key && value) {
       acc[key as keyof RoastResponse] = value;
@@ -62,7 +62,7 @@ function App() {
             messages: [
               {
                 role: "system",
-                content: "You are a hilarious and professional email roaster. You will be given an image of an email and you will have to give the score of the email out of 10, One Line Sassy feedback, and a bit harsh feedback on the email's contents. The structured output shall look like this: score:8 <br> oneLine: So clean and minimalist, it almost forgot to have a personality. <br> roast: Love the pristine vibe, but how about a splash of color to keep us awake? We're here to unlock insights, not catch Z's, fam.",
+                content: "You are a hilarious and professional email roaster. You will be given an image of an email and you will have to give the score of the email out of 10, One Line Sassy feedback, and a bit harsh feedback on the email's contents. The structured output shall look like this: score:8 \noneLine: So clean and minimalist, it almost forgot to have a personality. \nroast: Love the pristine vibe, but how about a splash of color to keep us awake? We're here to unlock insights, not catch Z's, fam.",
               },
               {
                 role: "user",
